@@ -11,19 +11,53 @@ module.exports = () => {
     mode: 'development',
     entry: {
       main: './src/js/index.js',
-      install: './src/js/install.js'
+      install: './src/js/install.js',
     },
     output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-      
+      //creates html and injects bundles
+      new HtmlWebpackPlugin({
+        template: './index.html',
+        title: 'PWA-Text-Editor',
+      }),
+      // new MiniCssExtractPlugin(),
+
+      //adds the service worker
+      new InjectManifest({
+        swSrc: './src-sw.js',
+        swDest: 'service-worker.js',
+      }),
+
+      new WebpackPwaManifest(),
     ],
 
     module: {
       rules: [
-        
+        {
+          test: /\.css$/i,
+          use: ['css-loader'],
+        },
+        {
+          test: /\.(png|svg|jpg|jpeg|gif)$/i,
+          type: 'asset/resource',
+        },
+        {
+          test: /\.m?js$/,
+          exclude: /(node_modules|bower_components)/,
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env'],
+              // plugins: [
+              //   '@babel/plugin-proposal-object-rest-spread',
+              //   '@babel/transform-runtime',
+              // ],
+            },
+          },
+        },
       ],
     },
   };
