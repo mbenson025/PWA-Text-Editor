@@ -34,9 +34,9 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'Contact Cards',
+        name: 'JATE',
         short_name: 'JATE',
-        description: 'pwa-text-editor',
+        description: 'just another text editor',
         background_color: '#225ca3',
         theme_color: '#225ca3',
         start_url: '/',
@@ -55,7 +55,7 @@ module.exports = () => {
       rules: [
         {
           test: /\.css$/i,
-          use: ['css-loader'],
+          use: ['style-loader', 'css-loader'],
         },
         {
           test: /\.(png|svg|jpg|jpeg|gif)$/i,
