@@ -5,7 +5,7 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/mbenson025/PWA-Text-Editor)
 
 <br>
-<!-- <a href="https://mvc-tech-blog-mb.herokuapp.com/">Heroku Deployment</a> -->
+<a href="https://pwatextedit.herokuapp.com/">Heroku Deployment</a>
 <br><br>
 
 ## Table of Contents
@@ -77,8 +77,7 @@ run npm seed
 
 - [Node.js](https://nodejs.org/en/)
 - [Express](https://expressjs.com/)
-- [Webpack](https://www.npmjs.com/package/webpack)
-- [Webpack-cli](https://www.npmjs.com/package/webpack-cli)
+- [Webpack](https://webpack.js.org/)
 - [Babel](https://babeljs.io/)
 - [Nodemon](https://www.npmjs.com/package/nodemon)
 - [Concurrently](https://www.npmjs.com/package/concurrently)
