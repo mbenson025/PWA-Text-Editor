@@ -1,4 +1,4 @@
-# PWA-Text-Editor
+# PWA Text Editor
 
 ![GitHub](https://img.shields.io/github/license/mbenson025/PWA-Text-Editor)
 ![GitHub language count](https://img.shields.io/github/languages/count/mbenson025/PWA-Text-Editor)

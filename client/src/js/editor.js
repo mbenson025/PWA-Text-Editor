@@ -14,7 +14,7 @@ export default class {
     this.editor = CodeMirror(document.querySelector('#main'), {
       value: '',
       mode: 'javascript',
-      theme: 'monokai',
+      theme: 'night',
       lineNumbers: true,
       lineWrapping: true,
       autofocus: true,
@@ -23,7 +23,7 @@ export default class {
     });
 
     // When the editor is ready, set the value to whatever is stored in indexeddb.
-    // Fall back to localStorage if nothing is stored in indexeddb, and if neither is available, set the value to header.
+    // Fall back to localStorage if nothing is stored in indexedDB, and if neither is available, set the value to header.
     getDb().then((data) => {
       console.info('Loaded data from IndexedDB, injecting into editor');
       this.editor.setValue(data || localData || header);
