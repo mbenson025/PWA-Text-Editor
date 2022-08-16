@@ -4,7 +4,10 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/mbenson025/PWA-Text-Editor)
 ![GitHub top language](https://img.shields.io/github/languages/top/mbenson025/PWA-Text-Editor)
 
+<img src="/assets/pwa.jpg" alt="deployed app" title="Deployed Application">
+
 <br>
+
 <a href="https://pwatextedit.herokuapp.com/">Heroku Deployment</a>
 <br><br>
 
@@ -22,6 +25,8 @@
 
 ## Description
 
+This single page application is a text editor that can function both online and offline. It is built with Progressive Web Application(PWA) criteria and features a number of data persistence techniques to serve as backups in case one of the options is not supported by the browser.
+
 <br>
 <br>
 
@@ -33,7 +38,7 @@
 
 ## Usage
 
-<!-- <br>
+<br>
 
 This application can be used locally by entering the following commands-
 
@@ -50,26 +55,25 @@ npm install
 Start the application/run the port:
 
 ```
-node server
+node run start
 ```
 
 <br>
 
-Optional- Run the seed file for starter content
+Optional- Run the app in development mode
 
 ```
-run npm seed
+npm run start:dev
 ```
 
-<br> -->
+<br>
 
 ## Screenshots
 
 <br>
-<!-- <img src="/public/assets/login.jpg" alt="login page" title="Login Page"> -->
-<br>
-<br>
-<!-- <img src="/public/assets/home.jpg" alt="home page" title="Blog Home Page"> -->
+<img src="./assets/swjate.jpg" alt="application service worker" title="Application Service Worker">
+
+<!-- <img src="/assets/swjate.jpg" alt="application service worker" title="Application Service Worker"> -->
 <br>
 <br>
 
