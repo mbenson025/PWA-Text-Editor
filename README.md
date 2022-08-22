@@ -72,8 +72,10 @@ npm run start:dev
 
 <br>
 <img src="./assets/swjate.jpg" alt="application service worker" title="Application Service Worker">
+<br>
+<br>
 
-<!-- <img src="/assets/swjate.jpg" alt="application service worker" title="Application Service Worker"> -->
+<img src="./assets/offlineworking.jpg" alt="app with console in offline" title="Offline Saving">
 <br>
 <br>
 
