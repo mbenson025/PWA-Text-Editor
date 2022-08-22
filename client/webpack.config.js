@@ -15,24 +15,19 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-      //creates html and injects bundles
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'PWA-Text-Editor',
+        title: 'J.A.T.E',
       }),
-
-      //adds the service worker
       new InjectManifest({
         swSrc: './src-sw.js',
-        swDest: 'service-worker.js',
+        swDest: 'src-sw.js',
       }),
-
-      //manifest.json
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
         name: 'Just Another Text Editor',
-        short_name: 'J.A.T.E.',
+        short_name: 'J.A.T.E',
         background_color: '#225ca3',
         theme_color: '#225ca3',
         start_url: '/',
